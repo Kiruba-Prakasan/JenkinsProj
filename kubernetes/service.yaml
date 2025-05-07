@@ -1,9 +1,10 @@
+# kubernetes/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
   name: react-frontend
 spec:
-  type: ClusterIP
+  type: ClusterIP  # Use LoadBalancer or NodePort if you need external access
   ports:
   - port: 80
     targetPort: 80
