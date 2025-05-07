@@ -1,8 +1,9 @@
+# helm-chart/values.yaml
 replicaCount: 2
 
 image:
-  repository: docker.io/react-frontend
-  tag: "latest"
+  repository: kirubarp/jenkinsrepo      # Update this to your Docker repository
+  tag: "18"                             # Update this to the correct tag of your image
   pullPolicy: Always
 
 service:
@@ -26,4 +27,3 @@ resources:
   requests:
     cpu: 100m
     memory: 128Mi
-
